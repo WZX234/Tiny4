@@ -1,4 +1,4 @@
-	LDI 0010 R2
+    LDI 0010 R2
 LOOP:
 	ADD R0, R1, Cin:1
 	LDI 0 R1
