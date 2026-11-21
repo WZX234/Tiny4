@@ -7,7 +7,6 @@
       <a name="appearance" val="classic"/>
     </tool>
     <tool name="Clock">
-      <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
     </tool>
   </lib>
@@ -175,12 +174,21 @@
       <a name="facing" val="south"/>
       <a name="label" val="RST"/>
     </comp>
-    <comp lib="0" loc="(1690,300)" name="Pin">
+    <comp lib="0" loc="(1630,460)" name="Pin">
       <a name="appearance" val="NewPins"/>
     </comp>
+    <comp lib="0" loc="(1630,480)" name="Constant"/>
+    <comp lib="0" loc="(1630,500)" name="Clock">
+      <a name="appearance" val="NewPins"/>
+    </comp>
+    <comp lib="0" loc="(1660,520)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="RST"/>
+    </comp>
     <comp lib="0" loc="(1710,370)" name="Splitter">
+      <a name="bit0" val="1"/>
       <a name="bit2" val="1"/>
-      <a name="bit3" val="1"/>
+      <a name="bit3" val="0"/>
       <a name="incoming" val="4"/>
       <a name="spacing" val="2"/>
     </comp>
@@ -256,6 +264,9 @@
       <a name="appear" val="center"/>
       <a name="facing" val="west"/>
       <a name="spacing" val="2"/>
+    </comp>
+    <comp lib="0" loc="(470,430)" name="Clock">
+      <a name="appearance" val="NewPins"/>
     </comp>
     <comp lib="0" loc="(610,640)" name="Splitter">
       <a name="appear" val="right"/>
@@ -396,6 +407,10 @@
       <a name="databus" val="bidir"/>
       <a name="enables" val="line"/>
     </comp>
+    <comp lib="5" loc="(1630,430)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="width" val="1"/>
+    </comp>
     <comp lib="5" loc="(270,580)" name="Register">
       <a name="appearance" val="logisim_evolution"/>
     </comp>
@@ -403,7 +418,9 @@
       <a name="addrWidth" val="12"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 12 8
-f3 61 71 e2 61
+ca 11 c4 a8 61 ec 7e cc
+7e 5 99 c8 cc 4b 22 3a
+80
 </a>
     </comp>
     <comp loc="(1150,740)" name="ALU"/>
@@ -494,22 +511,25 @@ f3 61 71 e2 61
     <wire from="(1530,840)" to="(1540,840)"/>
     <wire from="(1530,960)" to="(1860,960)"/>
     <wire from="(1540,110)" to="(1560,110)"/>
-    <wire from="(1540,240)" to="(1600,240)"/>
+    <wire from="(1540,240)" to="(1570,240)"/>
     <wire from="(1540,370)" to="(1570,370)"/>
     <wire from="(1540,500)" to="(1580,500)"/>
     <wire from="(1560,110)" to="(1560,230)"/>
     <wire from="(1560,230)" to="(1560,780)"/>
     <wire from="(1560,230)" to="(1600,230)"/>
+    <wire from="(1570,240)" to="(1600,240)"/>
     <wire from="(1570,250)" to="(1570,370)"/>
     <wire from="(1570,250)" to="(1600,250)"/>
     <wire from="(1570,370)" to="(1710,370)"/>
-    <wire from="(1570,60)" to="(1570,250)"/>
+    <wire from="(1570,60)" to="(1570,240)"/>
     <wire from="(1570,840)" to="(1580,840)"/>
     <wire from="(1580,260)" to="(1580,500)"/>
     <wire from="(1580,260)" to="(1600,260)"/>
     <wire from="(1620,270)" to="(1620,600)"/>
     <wire from="(1640,250)" to="(1810,250)"/>
-    <wire from="(1690,300)" to="(1730,300)"/>
+    <wire from="(1690,460)" to="(1700,460)"/>
+    <wire from="(1700,300)" to="(1700,460)"/>
+    <wire from="(1700,300)" to="(1730,300)"/>
     <wire from="(1730,340)" to="(1740,340)"/>
     <wire from="(1730,360)" to="(1740,360)"/>
     <wire from="(1740,310)" to="(1740,340)"/>
